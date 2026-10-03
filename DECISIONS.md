@@ -73,6 +73,10 @@ Una reserva solamente puede confirmarse mientras esté activa.
 
 Se considera que existe stock bajo cuando stock <= 5 y se enviara un correo esto esta pendiente de desarrollo
 
+## 2.7. CategoryConfiguration y ProductConfiguration
+
+Se crearon esas dos clases de apoyo para permitir que las reglas de negocio sean configurables y no acotadas a un escenario especifico
+
 
 # 3. Lo que se dejó fuera  importante para salir a produccion
 
