@@ -1,7 +1,9 @@
 package com.store.inventory;
 
 import com.store.inventory.api.InventoryService;
+import com.store.inventory.api.InventoryServiceImpl;
 import com.store.inventory.api.StockAlertListener;
+
 import java.time.Clock;
 
 /**
@@ -14,6 +16,6 @@ public final class Inventory {
     }
 
     public static InventoryService create(Clock clock, StockAlertListener alertListener) {
-        throw new UnsupportedOperationException("TODO");
+        return new InventoryServiceImpl(clock,alertListener);
     }
 }
